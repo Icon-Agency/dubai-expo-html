@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Scrollify - Header and Footer Example</title>
+    <meta name="description" content="A jQuery Scrollify example of implementing a header and footer.">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:title" content="jQuery Scrollify - Header and Footer Example">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="A jQuery Scrollify example of implementing a header and footer.">
+    <meta property="og:image" content="https://projects.lukehaas.me/scrollify/images/scrollify-screenshot.jpg">
+    <meta property="og:url" content="https://projects.lukehaas.me/scrollify/examples/header-footer">
+    <!--[if lt IE 9]>
+		<script src="script/html5shiv.min.js"></script>
+		<![endif]-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:600" />
+    <!-- <link rel="stylesheet" href="style/main.css" /> -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<!--  Add the new slick-theme.css if you want the default styling -->
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="style/demo.css">
+</head>
+
+<body>
+	<!-- <div class="outofscroll">
+		<div class="navbar" id="expo-navbar">
+	        <img src="img/logo.png">
+		</div>
+	        <div class="banner"><img class="bg-img" src="img/banner_hp1.png"><img class="shape" src="img/shape1.png"><h1 class="accent">Bringing  Australia  to the UAE</h1>
+	        </div>
+	        <div class="container news-section">
+	            <h2 class="news-title">Latest News</h2>
+	            <div class="row">
+	                <div class="news col-md-4 pb-5 pt-5">
+	                    <img src="img/news1.png">
+	                    <p>Duis aute irure dolor in laboris nisi ut aliquip ex ea commodo occaecat</p>
+	                </div>
+	                <div class="news col-md-4 pb-5 pt-5">
+	                    <img src="img/news2.png">
+	                    <p>Duis aute irure dolor in laboris nisi ut aliquip ex ea commodo occaecat</p>
+	                </div>
+	                <div class="news col-md-4 pb-5 pt-5">
+	                    <img src="img/news1.png">
+	                    <p>Duis aute irure dolor in laboris nisi ut aliquip ex ea commodo occaecat</p>
+	                </div>
+	            </div>
+	        </div>
+	</div> -->
+   
+
+         <section class="fixed-content">
+			<div class="content">
+
+				<div class="content-text">
+					<div class="slide" data-slide="1">
+						<h2 class="animatable color-white">Mobility  (on the move)</h2>
+						<div class="animatable color-white">
+							<p>We are proud to sit in the Mobility Zone. Australia’s unique understanding of mobility can connect minds to build the future.</p>
+							<p><a href="/scrollify#examples" class="arrow">See more examples</a></p>
+						</div>
+					</div>
+					<div class="slide" data-slide="2">
+						<h2 class="animatable">Innovation</h2>
+						<div class="animatable">
+							<p>The Australian Pavilion will share our innovation, creativity and optimism with the world.</p>
+						</div>
+					</div>
+
+					<div class="slide" data-slide="3">
+						<h2 class="animatable">Sustainable futures</h2>
+						<div class="animatable">
+							<p>Forward thinking and  next-generation innovation – Australia is protecting and preserving the future for all.</p>
+						</div>
+					</div>
+
+
+				</div>
+				
+			</div>
+		</section>
+	<ul class="pagination">
+            	<li><a class="active" href="#home"></a></li>
+            	<li><a class="" href="#second"></a></li>
+            	<li><a class="" href="#third"></a></li>
+            </ul>
+
+
+        <section class="panel extra" data-section-name="extra">
+        	
+        	<div class="navbar" id="expo-navbar">
+        <img src="img/logo.png">
+		</div>
+        <div class="banner"><img class="bg-img" src="img/banner_hp1.png"><img class="shape" src="img/shape1.png"><h1 class="accent">Bringing  Australia  to the UAE</h1>
+        </div>
+        <div class="container news-section">
+            <h2 class="news-title">Latest News</h2>
+            <div class="row">
+                <div class="news col-md-4 pb-5 pt-5">
+                    <img src="img/news1.png">
+                    <p>Duis aute irure dolor in laboris nisi ut aliquip ex ea commodo occaecat</p>
+                </div>
+                <div class="news col-md-4 pb-5 pt-5">
+                    <img src="img/news2.png">
+                    <p>Duis aute irure dolor in laboris nisi ut aliquip ex ea commodo occaecat</p>
+                </div>
+                <div class="news col-md-4 pb-5 pt-5">
+                    <img src="img/news1.png">
+                    <p>Duis aute irure dolor in laboris nisi ut aliquip ex ea commodo occaecat</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="panel home" data-section-name="home">
+            <div class="banner"><img class="bg-img" src="img/banner1.png"><!-- <h1 class="accent animatable">Mobility  (on the move)</h1>
+                <p class="text animatable">We are proud to sit in the Mobility Zone. Australia’s unique understanding of mobility can connect minds to build the future.</p> -->
+            </div>
+            
+        </section>
+        <section class="panel panel1" data-section-name="second">
+            <div class="banner"><img class="bg-img" src="img/banner2.png"><!-- <h1 class="accent animatable">Innovation</h1>
+                <p class="text animatable">The Australian Pavilion will share our innovation, creativity and optimism with the world. </p> -->
+            </div>
+        </section>
+        <section class="panel panel2" data-section-name="third">
+            <div class="banner"><img class="bg-img" src="img/banner3.png"><!-- <h1 class="accent animatable">Sustainable futures</h1>
+                <p class="text animatable">Forward thinking and  next-generation innovation – Australia is protecting and preserving the future for all. </p> -->
+            </div>
+        </section>
+        <section class="panel panel3" data-section-name="footer">
+        	<div class="footer">
+        		<h2>Major Partners</h2>
+        		<div class="slider autoplay">
+				<div class="banner"><img class="slider-img" src="img/slider1.png"></div>
+				<div class="banner"><img class="slider-img" src="img/slider2.png"></div>
+				
+			</div>
+			
+        	</div>
+        	<h2 style="text-align: center;">Join us in Dubai – an invitation to showcase your goods and services to the world.</h2>
+        	<div class="banner"><img class="bg-img" src="img/map.png"></div>
+        	<div class="banner"><img class="bg-img" src="img/footer.png"></div>
+        </section>
+        <script src="script/jquery-3.3.1.min.js"></script>
+        <script src="script/jquery.scrollify.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        $('.autoplay').slick({
+			  slidesToShow: 1,
+			  slidesToScroll: 1,
+			  autoplay: true,
+			  autoplaySpeed: 2000,
+			  dots: true,
+			  infinite: true,
+			  speed: 500,
+			  fade: true,
+			  cssEase: 'linear'
+			});
+        </script>
+        <script src="script/main.js"></script>
+        <script src="script/easing.js"></script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        
+</body>
+
+</html>
