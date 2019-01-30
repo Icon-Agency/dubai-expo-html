@@ -155,6 +155,7 @@ overflow:hidden;
 }
 .pagination a.active:after {
   box-shadow:inset 0 0 0 5px;
+  color: #0E0E8B;
 }
 .pagination a .hover-text {
   position:absolute;
@@ -182,4 +183,5 @@ overflow:hidden;
   top:0;
   right:4px;
   bottom:0;
+  box-shadow:inset 0 0 0 5px;
 }

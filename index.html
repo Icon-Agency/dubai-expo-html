@@ -123,6 +123,8 @@
             </div>
          </div>
       </section>
+      <section class="beforepannel">
+      </section>
       <section class="panel home" data-section-name="home">
          <div class="banner">
             <img class="bg-img" src="img/banner1.png"><!-- <h1 class="accent animatable">Mobility (on the move)</h1>
@@ -159,6 +161,24 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
       <script type="text/javascript">
+          $(window).scroll(function() {
+              var hT = $('.beforepannel').offset().top, // The vertical distance between the top of the page and the top of the element.
+                  hH = $('.beforepannel').outerHeight(), // The height of the element, including padding and borders.
+                  wH = $(window).height(), // Height of the window without margins, padding, borders.
+                  wS = $(this).scrollTop(), // The vertical distance between the top of the page and the top of the viewport.
+
+                  hT1 = $('.footer').offset().top,
+                  hH1 = $('.footer').outerHeight();
+              //console.log(hT) + console.log(hH) + console.log(wH) + console.log(wS) + console.log(hT1) + console.log(hH1);
+
+              if (hH < wH) {
+                  if (wS > (hT + hH - wH) && wS < hT1) {
+                      $(".pagination a").css("display", "block");
+                  } else {
+                      $(".pagination a").css("display", "none");
+                  }
+              }
+          });
          $('.autoplay').slick({
          slidesToShow: 1,
          slidesToScroll: 1,
