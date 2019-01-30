@@ -152,6 +152,7 @@ overflow:hidden;
   color:white;
   position:relative;
   padding:4px;
+  cursor: default;
 }
 .pagination a.active:after {
   box-shadow:inset 0 0 0 5px;

@@ -2,7 +2,7 @@ $(function() {
 	$.scrollify({
 		section: ".panel",
 		sectionName: false,
-		interstitialSection: ".outofscroll, .extra, .footer",
+		interstitialSection: ".extra, .footer",
 		easing: "easeOutExpo",
 		scrollSpeed: 1100,
 		offset: 0,
@@ -27,8 +27,6 @@ $(function() {
 			//},300);
 
 			// $('".' + ref+'"').addClass("actived");
-
-
 		},
 		after: function() {
 			
@@ -37,11 +35,7 @@ $(function() {
 			
 		},
 		afterRender: function() {
-			$(".pagination a").css("display", "none");
 			$(".pagination a").on("click",$.scrollify.move);
-
 		}
-
 	});
-
 });
