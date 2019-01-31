@@ -19,6 +19,24 @@ h1.accent {
   width: 15%;
   line-height: 1.5;
 }
+h2.accent {
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  width: 20%;
+  line-height: 1.5;
+  text-align: center;
+}
+.slider-link {
+  color: #56D6C9;
+  position: absolute;
+  top: 85%;
+  left: 47%;
+  width: 20%;
+  line-height: 1.5;
+  font-family: 'Rubik', sans-serif;
+}
 .text {
   color: white;
   position: absolute;
@@ -100,10 +118,14 @@ overflow:hidden;
 }
 .slide {
   position: absolute;
-  top:65px;
+  top: 30%;
   left:0;
   width:100%;
   z-index: 0;
+}
+.slide p {
+  font-size: 24px;
+  margin-top: 1rem;
 }
 .slide .animatable {
   opacity:0;
@@ -133,21 +155,43 @@ overflow:hidden;
 .color-white {
   color: white;
 }
+.color-blue {
+  color: #0E0E8B;
+}
+.color-orange {
+  color: #FF6519;
+}
+.color-green {
+  color: #208379;
+}
+.btn-blue {
+  background-color: #0E0E8B;
+  border-color: #0E0E8B;
+  padding: .5rem 3rem;
+  font-family: 'Rubik', sans-serif;
+  margin-top: 3rem;
+}
 
-
+.btn-orange {
+  background-color: #FF6519;
+  border-color: #FF6519;
+  padding: .5rem 3rem;
+  font-family: 'Rubik', sans-serif;
+  margin-top: 3rem;
+}
 
 .pagination {
   display: block;
   position:fixed;
-  right:20px;
-  top: 50%;
+  right:15%;
+  top: 20%;
   transform: translateY(-50%);
   font-size:1.4em;
   z-index: 10;
 }
 .pagination a {
   display:none;
-  height:20px;
+  height:25px;
   margin-bottom:5px;
   color:white;
   position:relative;
@@ -155,7 +199,7 @@ overflow:hidden;
   cursor: default;
 }
 .pagination a.active:after {
-  box-shadow:inset 0 0 0 5px;
+  box-shadow:inset 0 0 0 7px;
   color: #0E0E8B;
 }
 .pagination a .hover-text {
@@ -173,8 +217,8 @@ overflow:hidden;
 .pagination a:after {
   -webkit-transition:box-shadow 0.5s ease;
   transition:box-shadow 0.5s ease;
-  width:10px;
-  height:10px;
+  width:15px;
+  height:15px;
   display: block;
   border:1px solid;
   border-radius:50%;
@@ -184,5 +228,104 @@ overflow:hidden;
   top:0;
   right:4px;
   bottom:0;
-  box-shadow:inset 0 0 0 5px;
+  box-shadow:inset 0 0 0 7px;
+}
+
+
+.footer {
+  background-color: #292A2E;
+}
+.footer-left {
+  margin-top: 5rem;
+  margin-left: 30rem;
+}
+.footer a {
+  color: #fff;
+}
+.footer ul {
+  list-style: none;
+  display: inline-flex;
+}
+.footer li {
+  margin: 0 1rem;
+}
+.social-icon {
+  margin-bottom: 5rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+.social-icon i {
+  margin: 0 .5rem;
+}
+.footer-title {
+  font-family: 'Rubik', sans-serif;
+  color: #56D6C9;
+  margin-top: 5rem;
+}
+.footer-text {
+  color: #fff;
+  font-weight: 500;
+  width: 30%;
+}
+.footer-form {
+  width: 30%;
+}
+.footer-form button {
+  background-color: #56D6C9;
+  border-color: #56D6C9;
+  color: #000;
+}
+
+/* major partners */
+.partners {
+  background-color: #F0F0F5;
+}
+.partner-logo {
+  margin-top: 3rem;
+}
+
+
+/* footer slider */
+.slick-dots {
+  top: 55%;
+}
+.footer-slide {
+  background: linear-gradient(180deg, #F0F0F5 50%, #fff 50%);
+  padding-top: 10rem;
+}
+
+/* join us in Dubai */
+.showcase {
+  margin-bottom: 15rem;
+}
+.icon1{
+  background-color: #208379;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+.icon1 img,
+.icon2 img,
+.icon3 img {
+  margin: 1.5rem;
+}
+.icon-text {
+  font-family: 'Rubik', sans-serif;
+  margin-top: 2rem;
+  text-align: center;
+}
+.icon2{
+  background-color: #0E0E8B;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+.icon3{
+  background-color: #D14600;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
 }
