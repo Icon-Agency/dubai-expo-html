@@ -234,6 +234,7 @@ overflow:hidden;
 
 .footer {
   background-color: #292A2E;
+  padding-bottom: 5rem;
 }
 .footer-left {
   margin-top: 5rem;
@@ -279,9 +280,10 @@ overflow:hidden;
 /* major partners */
 .partners {
   background-color: #F0F0F5;
+  padding-top: 5rem;
 }
 .partner-logo {
-  margin-top: 3rem;
+  padding: 3rem 0 10rem 0;
 }
 
 
@@ -289,13 +291,34 @@ overflow:hidden;
 .slick-dots {
   top: 55%;
 }
+.slick-prev {
+  left: 32%;
+  z-index: 10;
+}
+.slick-prev:before, .slick-next:before {
+  opacity: 1;
+  line-height: .5;
+}
+.slick-prev:before {
+  content: url("../img/arrow-left.svg");
+}
+.slick-next:before {
+  content: url("../img/arrow-right.svg");
+}
+.slick-next {
+  right: 33%;
+  z-index: 10;
+}
+.slick-prev, .slick-next {
+  top: 47%;
+}
 .footer-slide {
   background: linear-gradient(180deg, #F0F0F5 50%, #fff 50%);
-  padding-top: 10rem;
 }
 
 /* join us in Dubai */
 .showcase {
+  margin-top: 10rem;
   margin-bottom: 15rem;
 }
 .icon1{
