@@ -563,6 +563,10 @@ overflow:hidden;
     width: 10px;
     height: 10px;
   }
+  .showcase {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -607,6 +611,9 @@ overflow:hidden;
     left: 17%;
     width: 70%;
   }
+  .partner-logo {
+    padding: 2rem 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -643,6 +650,11 @@ overflow:hidden;
   }
   .footer-right {
     margin-left: 1rem;
+  }
+  .btn-blue,
+  .btn-orange {
+    font-size: 10px;
+    padding: .5rem 1rem;
   }
 }
 
