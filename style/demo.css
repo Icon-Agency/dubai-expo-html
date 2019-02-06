@@ -643,9 +643,13 @@ overflow:hidden;
   }
   .footer-left ul {
     padding-left: 0;
+    display: block;
+  }
+  .footer li {
+    margin: .5rem 1rem;
   }
   .social-icon {
-    margin-left: 1rem;
+    margin-left: .5rem;
     margin-bottom: 2rem;
   }
   .footer-right {
@@ -700,7 +704,10 @@ overflow:hidden;
     font-size: 12px;
   }
   .footer li {
-    margin: 0 .5rem;
+    margin: .5rem;
+  }
+  .social-icon {
+    margin-left: 0;
   }
   .slick-prev {
     left: calc(50% - 140px);
