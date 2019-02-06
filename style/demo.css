@@ -656,8 +656,56 @@ overflow:hidden;
     font-size: 10px;
     padding: .5rem 1rem;
   }
+  .pagination {
+    top: 6%;
+  }
+  .pagination a {
+    height: 12px;
+  }
+  .pagination a:after {
+    width: 8px;
+    height: 8px;
+  }
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 375px) {
+  .btn-orange-banner {
+    top: 34%;
+    font-size: 14px;
+    padding: .5rem .8rem;
+  }
+  .slide h2 {
+    font-size: 1rem;
+  }
+  .slide p {
+    width: 50%;
+  }
+  .btn-blue, .btn-orange {
+    margin-top: -10px;
+  }
+}
 
+@media only screen and (max-width: 320px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+  .navbar .logo {
+    max-width: 300px;
+  }
+  h1.accent {
+    font-size: 1.2rem;
+  }
+  .btn-orange-banner {
+    top: 32%;
+    font-size: 12px;
+  }
+  .footer li {
+    margin: 0 .5rem;
+  }
+  .slick-prev {
+    left: calc(50% - 140px);
+  }
+  .slick-next {
+    right: calc(50% - 110px);
+  }
 }
