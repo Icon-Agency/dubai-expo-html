@@ -13,10 +13,13 @@ body{
   overflow: hidden;
 }
 .bg-img {
+  background-image: url("../img/banner_hp1.png");
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 20% 70%;
+  opacity: 1;
+  z-index: -1;
 }
 
 .map-img {
@@ -31,9 +34,13 @@ body{
 }
 
 .shape {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 20%;
   left: 20%;
+  opacity: 0.9;
 }
 
 h1.accent {

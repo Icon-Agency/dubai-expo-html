@@ -39,3 +39,38 @@ $(function() {
 		}
 	});
 });
+
+
+//Preload images first
+$.fn.preload = function() {
+    this.each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+var images = Array("./img/banner_hp1.png",
+    "./img/banner_hp2.png");
+$([images[0],images[1]]).preload();
+// Usage:
+var currimg = 0;
+$(document).ready(function(){
+    function loading(){
+        $('#background').animate({ opacity: 1 }, 1000,function(){
+            //finished animating, minifade out and fade new back in
+            $('#background').animate({ opacity: 0.7 }, 1000,function(){
+                currimg++;
+                if(currimg > images.length-1){
+                    currimg=0;
+                }
+                var newimage = images[currimg];
+                //swap out bg src
+                $('#background').css("background-image", "url("+newimage+")");
+                //animate fully back in
+                $('#background').animate({ opacity: 1 }, 1000,function(){
+                    //set timer for next
+                    setTimeout(loading,5000);
+                });
+            });
+        });
+    }
+    setTimeout(loading,5000);
+});
