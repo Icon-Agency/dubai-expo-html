@@ -13,7 +13,7 @@ body{
   overflow: hidden;
 }
 .bg-img {
-  background-image: url("../img/banner_hp1.png");
+  background-image: url("../img/banner_hp1.jpg");
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,7 +112,8 @@ h3 {
 }
 
 .news-section {
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
+    margin-top: 10rem;
 }
 .news-title {
 

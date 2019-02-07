@@ -47,8 +47,8 @@ $.fn.preload = function() {
         $('<img/>')[0].src = this;
     });
 }
-var images = Array("./img/banner_hp1.png",
-    "./img/banner_hp2.png");
+var images = Array("./img/banner_hp1.jpg",
+    "./img/banner_hp2.jpg");
 $([images[0],images[1]]).preload();
 // Usage:
 var currimg = 0;

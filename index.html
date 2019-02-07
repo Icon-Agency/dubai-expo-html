@@ -27,7 +27,7 @@
 
       <section class="fixed-content">
          <div class="content">
-            <div class="slide" data-slide="1">
+            <div class="slide" data-slide="2">
                <div class="container">
                   <div class="row">
                      <div class="col-md-4">
@@ -41,7 +41,7 @@
                </div>
             </div>
          </div>
-         <div class="slide" data-slide="2">
+         <div class="slide" data-slide="3">
             <div class="container">
                <div class="row">
                   <div class="col-md-4">
@@ -54,7 +54,7 @@
                </div>
             </div>
          </div>
-         <div class="slide" data-slide="3">
+         <div class="slide" data-slide="4">
             <div class="container">
                <div class="row">
                   <div class="col-md-4">
@@ -98,13 +98,13 @@
                               <animate attributeName="points" dur="3s" to="0.000 0.000, 376.800 0.000, 411.000 102.800, 239.800 274.000, 34.200 239.800, 0.000 0.000" repeatCount="indefinite"></animate>
 
                            </polygon>-->
-                           <polygon points="0 0 160 414 160 414 340 450 600 92" fill="url(#HomeBannerPurpleGradient)">
-                              <animate to="0,0 160,414 160,414 340,450 600,92" repeatCount="indefinite" attributeName="points, opacity" dur="5s"></animate>
-                              <animate to="0,8 30,340 116,450 430,395 560,113" repeatCount="indefinite" attributeName="points" dur="5s" fill="freeze"></animate>
-                              <animate to="99,3 0,210 87,401 570,450 475,32"  repeatCount="indefinite" attributeName="points" dur="5s" fill="freeze" ></animate>
-                              <animate to="0,54 37,384 37,383 340,450 600,104" repeatCount="indefinite" attributeName="points" dur="5s" fill="freeze"></animate>
-                              <animate to="25,9 52,450 52,450 530,390 545,98" repeatCount="indefinite" attributeName="points" dur="5s" fill="freeze"></animate>
-                              <animate to="0,0 160,414 160,414 340,450 600,92" repeatCount="indefinite" attributeName="points, opacity" dur="5s"></animate>
+                           <polygon points="366.900 326.200, 530.000 0.000, 81.500 0.000, 0.000 122.300, 0.000 367.000, 244.600 326.200, 366.900 326.200" fill="url(#HomeBannerPurpleGradient)">
+                              <animate to="366.900 326.200, 530.000 0.000, 81.500 0.000, 0.000 122.300, 0.000 367.000, 244.600 326.200, 366.900 326.200" repeatCount="indefinite" attributeName="points, opacity" dur="10s"></animate>
+                              <animate to="205.714 0.000, 102.859 34.286, 0.000 171.429, 102.859 480.000, 480.000 342.857, 480.000 171.429, 308.571 0.000"  repeatCount="indefinite" attributeName="points" dur="10s" fill="freeze" ></animate>
+                             <!-- <animate to="434.000 367.000, 530.000 0.000, 81.500 0.000, 0.000 119.000, 0.000 272.000, 149.000 367.000, 434.000 367.000" repeatCount="indefinite" attributeName="points" dur="10s" fill="freeze"></animate>-->
+                              <animate to="366.900 326.200, 530.000 0.000, 81.500 0.000, 0.000 122.300, 0.000 367.000, 244.600 326.200, 366.900 326.200" repeatCount="indefinite" attributeName="points" dur="10s" fill="freeze"></animate>
+                              <!--<animate to="25,9 52,450 52,450 530,390 545,98" repeatCount="indefinite" attributeName="points" dur="10s" fill="freeze"></animate>
+                              <animate to="0,0 160,414 160,414 340,450 600,92" repeatCount="indefinite" attributeName="points, opacity" dur="10s"></animate>-->
                               </polygon>
                               <script type="text/ecmascript" xlink:href="https://www.petermac.org/sites/all/themes/petermac/assets/build/js/vendors/smil.check.js"></script>
                         </svg>
@@ -117,6 +117,8 @@
             </div>
 
          </div>
+      </section>
+      <section class="panel latest-news" data-section-name="news">
          <div class="container news-section">
             <h2 class="news-title">Latest News</h2>
             <div class="row">
@@ -280,7 +282,7 @@
               }
           });
           $("#to-top").click(function () {
-              $("body,html").animate({scrollTop: 0}, 500);
+              $.scrollify.move(0);
           });
       </script>
       <script src="script/main.js"></script>
