@@ -83,7 +83,7 @@ $(function(t, i) {
             var i = (t(".banner-block-content"), this);
             this.banner = t(".banner-block-content"), this.rows = t(".field-collection-container .field-collection-view", this.banner), this.total = this.rows.length, this.start = 0, this.bootstrap = "col-sm-6 col-sm-offset-6", this.rows.each(function(s, n) {
                 var e = t("div.img", t(this));
-                t(this).wrapInner('<div class="inner"></div>'), t(this).wrapInner('<div class="' + i.bootstrap + '"></div>'), e.attr("data-banner-index", s).appendTo(t(".images", i.banner)), t(this).attr("data-banner-index", s).attr("class", "text").appendTo(t(".texts .text-container", i.banner))
+                t(this).wrapInner('<div class="inner"></div>'), t(this).wrapInner('<div class="' + i.bootstrap + '"></div>'), e.attr("data-banner-index", s).appendTo(t(".images", i.banner)), t(this).attr("data-banner-index", s).attr("class", "text").appendTo(t(".texts .container", i.banner))
             }), t(".field-collection-container", this.banner).remove(), this.imgDivs = t(".images .img", this.banner), this.txtDivs = t(".texts .text", this.banner), this.imgDivs.eq(this.start).css("background-image", "url(" + this.imgDivs.eq(this.start).data("img-src") + ")"), this.imgDivs.eq(this.start).addClass("current").show(), this.txtDivs.eq(this.start).addClass("current").fadeIn(this.duration), this.txtDivs.find(".inner").on("mouseenter", function() {
                 t(".shape", this.banner).addClass("hover")
             }).on("mouseleave", function() {
