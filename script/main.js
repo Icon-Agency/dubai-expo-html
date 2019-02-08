@@ -2,7 +2,7 @@ $(function() {
 	$.scrollify({
 		section: ".panel",
 		sectionName: false,
-		interstitialSection: ".extra, .footer",
+		interstitialSection: ".extra, .latest-news, .footer",
 		easing: "easeOutExpo",
 		scrollSpeed: 1100,
 		offset: 0,
