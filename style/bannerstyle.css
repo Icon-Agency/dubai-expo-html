@@ -1,0 +1,176 @@
+#block-bean-homepage-banner {
+    position: relative;
+}
+
+#block-bean-homepage-banner .container {
+    position: relative;
+}
+
+#block-bean-homepage-banner .spacer {
+    padding-bottom: 40%;
+}
+
+#block-bean-homepage-banner .images>div {
+    background-color: #ccc;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width:767px) {
+
+    #block-bean-homepage-banner .spacer {
+        height: 200px;
+    }
+}
+
+
+#block-bean-homepage-banner .texts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 18;
+    height: 100%;
+}
+
+#block-bean-homepage-banner .texts .container {
+    height: 100%;
+}
+
+#block-bean-homepage-banner .texts .text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#block-bean-homepage-banner .texts .col-sm-6 {
+    height: 100%;
+}
+
+#block-bean-homepage-banner .texts .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20% 30% 0 50%;
+    color: #fff;
+    height: 100%;
+}
+
+#block-bean-homepage-banner .texts .inner:hover {
+    cursor: pointer;
+}
+
+#block-bean-homepage-banner .shape {
+    position: absolute;
+    width: 100%;
+    z-index: 12;
+    display: none;
+    -webkit-transform: translate3D(0, 0, 0);
+    -ms-transform: translate3D(0, 0, 0);
+    -o-transform: translate3D(0, 0, 0);
+    transform: translate3D(0, 0, 0);
+}
+
+#block-bean-homepage-banner .shape.hover-ready {
+    opacity: 1;
+    -webkit-transition: opacity 0.25s linear;
+    -o-transition: opacity 0.25s linear;
+    transition: opacity 0.25s linear;
+}
+
+#block-bean-homepage-banner .shape.hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#block-bean-homepage-banner .shape svg,
+#block-bean-homepage-banner .shape .ie8-shape {
+    max-width: 100%;
+    /* width: 100%; */
+    height: 100%;
+    margin: 20px 0 10px 0;
+}
+
+#block-bean-homepage-banner .shape .ie8-shape {
+    display: none;
+}
+
+#block-bean-homepage-banner .shape polygon {
+    shape-rendering: geometricPrecision;
+    opacity: 0.9;
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    #block-bean-homepage-banner h2 {
+        font-size: 25px;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    #block-bean-homepage-banner h2 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    #block-bean-homepage-banner {
+        background: #411e75;
+        background: -webkit-linear-gradient(25deg, #411e75 0%, #ad3192 100%);
+        background: -o-linear-gradient(25deg, #411e75 0%, #ad3192 100%);
+        background: linear-gradient(65deg, #411e75 0%, #ad3192 100%);
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#411e75,endColorstr=#ad3192,GradientType=1)";
+    }
+
+    #block-bean-homepage-banner .banner-block-content>.container {
+        background-image: url(/sites/all/themes/petermac/assets/build/images/sprites/purple-overlay.png);
+        background-position: center top;
+    }
+
+    #block-bean-homepage-banner h2 {
+        font-size: 23px;
+        line-height: 1.4;
+        color: #fff;
+    }
+
+    #block-bean-homepage-banner .texts .text {
+        padding: 0;
+        margin: 0;
+    }
+
+    #block-bean-homepage-banner .texts .inner {
+        top: 200px;
+        height: auto;
+        color: #1a1a1a;
+        padding: 28px 15px 20px;
+    }
+
+    #block-bean-homepage-banner .spacer {
+        height: 413px;
+    }
+
+    #block-bean-homepage-banner .images {
+        display: block;
+        position: static;
+    }
+
+    #block-bean-homepage-banner .images>div {
+        height: 200px;
+    }
+
+    #block-bean-homepage-banner .shape {
+        display: none !important;
+    }
+}

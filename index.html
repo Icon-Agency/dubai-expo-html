@@ -22,6 +22,7 @@
       <!--  Add the new slick-theme.css if you want the default styling -->
       <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
       <link rel="stylesheet" type="text/css" href="style/demo.css">
+      <link rel="stylesheet" type="text/css" href="style/bannerstyle.css">
    </head>
    <body>
 
@@ -79,11 +80,26 @@
          <div class="navbar" id="expo-navbar">
             <img src="img/logo.png" class="logo">
          </div>
-         <div class="banner">
-            <div class="bg-img" id="background">
-               <div class="row">
-                  <div class="col-md-12">
+         <div id="block-bean-homepage-banner" class="banner">
+            <div class="banner-block-content" id="background">
+               <div class="">
+                  <div class="field-collection-container">
+                     <div class="field-collection-view"><h1>Bringing  Australia to the UAE</h1><a href="#" class="btn btn-primary btn-orange-banner">TAKE A TOUR</a>
+                        <div class="img" data-banner-index="" data-img-src="img/banner_hp1.jpg"></div>
+                     </div>
+                     <div class="field-collection-view"><h1>We’re bringing  Australia  to the UAE</h1><a href="#" class="btn btn-primary btn-orange-banner">OUR VISION</a>
+                        <div class="img" data-banner-index="" data-img-src="img/banner_hp2.jpg"></div>
+                     </div>
+
+                  </div>
+                  <div class="spacer"></div>
+                     <div class="images"></div>
+                     <div class="texts">
+                        <div class="text-container"></div>
+                     </div>
                      <div class="shape">
+
+                           <div class="col-sm-6 col-sm-offset-6">
                         <svg version="1.1" id="Fill_2_Copy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                           y="0px" viewBox="0 0 600 450" width="600"  xml:space="preserve">
                            <defs>
@@ -92,26 +108,27 @@
                                     <stop offset="100%" stop-color="#5b5a57"></stop>
                                 </linearGradient>
                             </defs>
+                            <polygon points="0,8 30,340 116,450 430,395 560,113" fill="url(#HomeBannerPurpleGradient)">
+                                <animate to="0,8 30,340 116,450 430,395 560,113"  attributeName="points" dur="3s" fill="freeze" keySplines="0.42 0 0.58 1" calcMode="spline" keyTimes="0;1"></animate>
+                                <animate to="99,3 0,210 87,401 570,450 475,32"  attributeName="points" dur="3s" fill="freeze" keySplines="0.42 0 0.58 1" calcMode="spline" keyTimes="0;1"></animate>
+                                <animate to="0,54 37,384 37,383 340,450 600,104"  attributeName="points" dur="3s" fill="freeze" keySplines="0.42 0 0.58 1" calcMode="spline" keyTimes="0;1"></animate>
+                                <animate to="25,9 52,450 52,450 530,390 545,98"  attributeName="points" dur="3s" fill="freeze" keySplines="0.42 0 0.58 1" calcMode="spline" keyTimes="0;1"></animate>
+                            </polygon>
                            <!--<polygon points="366.900 326.200, 530.000 0.000, 81.500 0.000, 0.000 122.300, 0.000 367.000, 244.600 326.200, 366.900 326.200" fill="url(#HomeBannerPurpleGradient)">
-                              <animate attributeName="points" dur="3s" to="366.900 326.200, 530.000 0.000, 81.500 0.000, 0.000 122.300, 0.000 367.000, 244.600 326.200, 366.900 326.200" repeatCount="indefinite"></animate>
-                              <animate attributeName="points" dur="3s" to="0.000 102.800, 34.200 342.700, 137.000 377.000, 239.800 377.000, 411.000 205.600, 274.000 0.000, 0.000 102.800" repeatCount="indefinite"></animate>
-                              <animate attributeName="points" dur="3s" to="0.000 0.000, 376.800 0.000, 411.000 102.800, 239.800 274.000, 34.200 239.800, 0.000 0.000" repeatCount="indefinite"></animate>
+                              &lt;!&ndash;<animate to="366.900 326.200, 530.000 0.000, 81.500 0.000, 0.000 122.300, 0.000 367.000, 244.600 326.200, 366.900 326.200" repeatCount="indefinite" attributeName="points, opacity" dur="10s"></animate>&ndash;&gt;
 
-                           </polygon>-->
-                           <polygon points="366.900 326.200, 530.000 0.000, 81.500 0.000, 0.000 122.300, 0.000 367.000, 244.600 326.200, 366.900 326.200" fill="url(#HomeBannerPurpleGradient)">
-                              <animate to="366.900 326.200, 530.000 0.000, 81.500 0.000, 0.000 122.300, 0.000 367.000, 244.600 326.200, 366.900 326.200" repeatCount="indefinite" attributeName="points, opacity" dur="10s"></animate>
-                              <animate to="205.714 0.000, 102.859 34.286, 0.000 171.429, 102.859 480.000, 480.000 342.857, 480.000 171.429, 308.571 0.000"  repeatCount="indefinite" attributeName="points" dur="10s" fill="freeze" ></animate>
-                             <!-- <animate to="434.000 367.000, 530.000 0.000, 81.500 0.000, 0.000 119.000, 0.000 272.000, 149.000 367.000, 434.000 367.000" repeatCount="indefinite" attributeName="points" dur="10s" fill="freeze"></animate>-->
-                              <animate to="366.900 326.200, 530.000 0.000, 81.500 0.000, 0.000 122.300, 0.000 367.000, 244.600 326.200, 366.900 326.200" repeatCount="indefinite" attributeName="points" dur="10s" fill="freeze"></animate>
-                              <!--<animate to="25,9 52,450 52,450 530,390 545,98" repeatCount="indefinite" attributeName="points" dur="10s" fill="freeze"></animate>
-                              <animate to="0,0 160,414 160,414 340,450 600,92" repeatCount="indefinite" attributeName="points, opacity" dur="10s"></animate>-->
-                              </polygon>
-                              <script type="text/ecmascript" xlink:href="https://www.petermac.org/sites/all/themes/petermac/assets/build/js/vendors/smil.check.js"></script>
+                             &lt;!&ndash; <animate to="437.000 308.000, 530.000 0.000, 0.000 0.000, 32.000 155.000, 0.000 367.000, 215.000 367.000, 437.000 308.000"  repeatCount="indefinite" attributeName="points" dur="10s" fill="freeze" ></animate>
+                              <animate to="434.000 367.000, 530.000 0.000, 81.500 0.000, 0.000 119.000, 0.000 272.000, 149.000 367.000, 434.000 367.000" repeatCount="indefinite" attributeName="points" dur="10s" fill="freeze"></animate>&ndash;&gt;
+                             &lt;!&ndash; <animate to="205.714 0.000, 102.859 34.286, 0.000 171.429, 102.859 480.000, 480.000 342.857, 480.000 171.429, 308.571 0.000" repeatCount="indefinite" attributeName="points" dur="10s" fill="freeze"></animate>&ndash;&gt;
+                             &lt;!&ndash; <animate to="366.900 326.200, 530.000 0.000, 81.500 0.000, 0.000 122.300, 0.000 367.000, 244.600 326.200, 366.900 326.200" repeatCount="indefinite" attributeName="points" dur="10s" fill="freeze"></animate>&ndash;&gt;
+                              &lt;!&ndash;<animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 50 50" to="360 50 50" repeatCount="indefinite" dur="5s"></animateTransform>&ndash;&gt;
+
+                              </polygon>-->
                         </svg>
+                           </div>
 
                      </div>
-                     <h1 class="accent">Bringing  Australia to the UAE</h1>
-                     <p><a href="#" class="btn btn-primary btn-orange-banner">TAKE A TOUR</a></p>
+
                   </div>
                </div>
             </div>
@@ -241,6 +258,8 @@
 
       <script src="script/jquery-3.3.1.min.js"></script>
       <script src="script/jquery.scrollify.js"></script>
+      <script src="script/underscore.js"></script>
+      <script src="script/jquery.waitforimages.js"></script>
       <script type="text/javascript" src="slick/slick.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
